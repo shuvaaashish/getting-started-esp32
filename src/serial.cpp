@@ -3,7 +3,9 @@
 #define LED 2 
 void setup() {
   Serial.begin(115200);
-  delay(1000);// glitch avoid garna lai .. boot garesi serial moniter ma print nahune problem dher hunxa  
+  delay(1000);// glitch avoid garna lai .. boot garesi serial moniter ma print nahune problem dher hunxa
+  //the microcontroller completely freezes for one second. It cannot read sensors, check buttons,
+  // process Wi-Fi data, or run any other code during that time. It's effectively paralyzed.
   pinMode(LED, OUTPUT);
   Serial.println("Type 'ON' to light up the blue LED.");
   Serial.println("Type 'OFF' to turn it off.");

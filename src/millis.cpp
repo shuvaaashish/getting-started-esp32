@@ -9,7 +9,7 @@ void setup() {
 }
 
 void loop() {
-  unsigned long currentMillis = millis();
+  unsigned long currentMillis = millis();//starts counting exact millisecond since the board is powered on
 
   if (currentMillis - previousMillis >= interval) {
     previousMillis = currentMillis;
